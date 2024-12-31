@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Cloner le projet') {
             steps {
-                git 'https://github.com/Rabha08/pfa.git'
+                git 'https://github.com/ImaneKCH/House-Of-Job.git'
             }
         }
         stage('Verifier Docker et Docker Compose') {
