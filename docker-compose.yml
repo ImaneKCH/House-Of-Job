@@ -2,14 +2,10 @@ version: '3.8'
 
 services:
   app:
-    image: php:7.4-fpm
-    container_name: php_app
-    volumes:
-      - .:/var/www/html
-    ports:
-      - "9000:9000"
-    networks:
-      - app-network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: house-of-job:latest
 
   web:
     image: nginx:latest
